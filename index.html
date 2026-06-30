@@ -3,12 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Sister Maid NJ</title>
 
 <style>
 
-/* RESET */
 *{
     margin:0;
     padding:0;
@@ -18,45 +16,75 @@
 body{
     font-family:Arial, sans-serif;
     color:#333;
-    line-height:1.6;
 }
 
-/* HEADER */
-header{
-    background:#eaf6f6;
-    text-align:center;
-    padding:60px 20px;
+/* ===== HEADER BANNER ===== */
+.top-banner{
+    background: url("logo2.jpg") center/cover no-repeat;
 }
 
+/* DARK OVERLAY */
+.overlay{
+    background: rgba(0,0,0,0.60);
+    padding:40px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+    color:white;
+}
+
+/* LEFT LOGO */
 .logo{
-    width:180px;
-    max-width:90%;
-    display:block;
-    margin:0 auto 20px;
+    width:120px;
+    border-radius:10px;
 }
 
-/* TITLES */
-h1{
-    color:#008080;
-    font-size:42px;
+/* CENTER TEXT */
+.center{
+    flex:1;
+    min-width:250px;
+    text-align:center;
+}
+
+.center h1{
+    font-size:34px;
     margin-bottom:10px;
 }
 
-h2{
-    color:#008080;
-    margin-bottom:20px;
-    text-align:center;
+/* RIGHT SIDE */
+.right-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+/* BUSINESS CARD */
+.businesscard{
+    width:160px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* QR CODE */
+.qr{
+    width:140px;
+    border-radius:8px;
+    background:white;
+    padding:5px;
 }
 
 /* BUTTON */
 .button{
     display:inline-block;
-    background:#008080;
+    margin-top:15px;
+    background:#00a8a8;
     color:white;
-    padding:14px 30px;
-    text-decoration:none;
+    padding:10px 18px;
     border-radius:6px;
-    margin-top:20px;
+    text-decoration:none;
 }
 
 /* SECTIONS */
@@ -64,6 +92,12 @@ h2{
     max-width:1100px;
     margin:auto;
     padding:40px 20px;
+}
+
+h2{
+    text-align:center;
+    color:#008080;
+    margin-bottom:20px;
 }
 
 /* SERVICES */
@@ -75,25 +109,16 @@ h2{
 
 .card{
     border:1px solid #ddd;
-    border-radius:8px;
     padding:20px;
-}
-
-/* BUSINESS CARD IMAGE */
-.businesscard{
-    width:450px;
-    max-width:100%;
-    display:block;
-    margin:30px auto;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    border-radius:8px;
+    background:white;
 }
 
 /* FOOTER */
 footer{
-    background:#f5f5f5;
     text-align:center;
     padding:20px;
+    background:#f5f5f5;
     margin-top:40px;
 }
 
@@ -102,31 +127,49 @@ footer{
 
 <body>
 
-<!-- HEADER -->
-<header>
+<!-- ===== HEADER ===== -->
+<div class="top-banner">
 
-<img src="Logo.png" alt="Sister Maid NJ Logo" class="logo">
+<div class="overlay">
 
-<h1>Sister Maid NJ</h1>
+    <!-- LEFT LOGO -->
+    <img src="Logo.png" class="logo" alt="Logo">
 
-<p>Professional Residential Cleaning Services</p>
+    <!-- CENTER TEXT -->
+    <div class="center">
+        <h1>Sister Maid NJ</h1>
 
-<p>Reliable • Affordable • Thorough</p>
+        <p>Professional Residential Cleaning Services</p>
+        <p>Reliable • Affordable • Thorough</p>
 
-<p>📞 551-359-1685</p>
-<p>📧 sistermaidnj@outlook.com</p>
+        <p>📞 551-359-1685</p>
+        <p>📧 sistermaidnj@outlook.com</p>
 
-<a class="button"
-href="https://docs.google.com/forms/d/e/1FAIpQLSdYJWfAc91uAfWKb7RXE6mZ4zpYBO3S-yIeXhZbJ62FEwkAPg/viewform"
-target="_blank">
+        <a class="button"
+        href="https://bit.ly/4eDUcJe"
+        target="_blank">
+        BOOK NOW
+        </a>
+    </div>
 
-BOOK NOW
+    <!-- RIGHT SIDE -->
+    <div class="right-box">
 
-</a>
+        <!-- BUSINESS CARD -->
+        <img src="Front Bussines Card.jpg" class="businesscard" alt="Business Card">
 
-</header>
+        <!-- QR CODE (CONTACT + LINKS) -->
+        <img class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ACastillo%3BRamona%0AFN%3ARamona%20Castillo%0AORG%3ASister%20Maid%20NJ%0ATEL%3A5513591685%0AEMAIL%3Asistermaidnj%40outlook.com%0AURL%3Ahttps%3A%2F%2Ftinyurl.com%2FSisterMaidNJ%0AURL%3Ahttps%3A%2F%2Fbit.ly%2F4eDUcJe%0ASOCIALPROFILE%3Ahttps%3A%2F%2Finstagram.com%2FSisterMaidNJ%0AEND%3AVCARD"
+        alt="QR Code">
 
-<!-- SERVICES -->
+    </div>
+
+</div>
+
+</div>
+
+<!-- ===== SERVICES ===== -->
 <section class="container">
 
 <h2>Our Services</h2>
@@ -140,35 +183,25 @@ BOOK NOW
 
 <div class="card">
 <h3>One-Time Cleaning</h3>
-<p>Perfect for special occasions or deep refresh cleaning.</p>
+<p>Deep cleaning for special occasions or move-ins.</p>
 </div>
 
 <div class="card">
 <h3>Move In / Move Out</h3>
-<p>Detailed cleaning for homes, rentals, and apartments.</p>
+<p>Full detailed property cleaning services.</p>
 </div>
 
 <div class="card">
 <h3>Office Cleaning</h3>
-<p>Professional cleaning for small businesses and offices.</p>
+<p>Professional cleaning for small businesses.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- BUSINESS CARD -->
-<section class="container">
-
-<h2>Business Card</h2>
-
-<img src="Front Bussines Card.jpg" alt="Business Card" class="businesscard">
-
-</section>
-
-<!-- FOOTER -->
+<!-- ===== FOOTER ===== -->
 <footer>
-<p>📧 sistermaidnj@outlook.com</p>
 <p>Sister Maid NJ © 2026</p>
 </footer>
 
