@@ -3,71 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sister Maid NJ</title>
 
 <style>
-body{
+
+/* RESET */
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:Arial, sans-serif;
-    line-height:1.6;
     color:#333;
+    line-height:1.6;
 }
 
-header{
-    background:#eaf6f6;
-    text-align:center;
-    padding:60px 20px;
-}
-
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-h1{
-    font-size:48px;
-    margin-bottom:10px;
-}
-
-h2{
-    color:#008080;
-}
-
-.button{
-    display:inline-block;
-    background:#008080;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:5px;
-    margin-top:15px;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    border:1px solid #ddd;
-    padding:20px;
-    border-radius:8px;
-}
-
-footer{
-    background:#f5f5f5;
-    text-align:center;
-    padding:20px;
-}
-<style>
-
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-}
-
+/* HEADER */
 header{
     background:#eaf6f6;
     text-align:center;
@@ -77,148 +31,144 @@ header{
 .logo{
     width:180px;
     max-width:90%;
-    margin:0 auto 20px;
     display:block;
+    margin:0 auto 20px;
 }
 
+/* TITLES */
+h1{
+    color:#008080;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#008080;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+/* BUTTON */
 .button{
     display:inline-block;
     background:#008080;
     color:white;
-    padding:12px 25px;
+    padding:14px 30px;
     text-decoration:none;
-    border-radius:5px;
+    border-radius:6px;
+    margin-top:20px;
 }
 
-</style>
-
-</head>
-<body>
-
-<header>
-
-<img src="Logo.png" alt="Sister Maid NJ Logo" class="logo">
-     alt="Sister Maid NJ Logo"
-     class="logo">
-
-<h3>Professional Residential Cleaning Services</h3>
-
-    <p>
-        Reliable • Affordable • Thorough
-    </p>
-
-    <p>
-        📞 551-359-1685<br>
-        📧 sistermaidnj@gmail.com
-    </p>
-
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYJWfAc91uAfWKb7RXE6mZ4zpYBO3S-yIeXhZbJ62FEwkAPg/viewform"
-   class="button"
-   target="_blank">
-   BOOK NOW
-</a>
-</header>
-
-<section class="container">
-    <h2>Why Choose Sister Maid NJ?</h2>
-
-    <ul>
-        <li>Reliable & Professional</li>
-        <li>Friendly Service</li>
-        <li>Attention to Detail</li>
-        <li>Flexible Scheduling</li>
-        <li>Residential & Commercial Cleaning</li>
-        <li>Free Estimates</li>
-    </ul>
-</section>
-
-<section class="container">
-    <h2>Our Services</h2>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>Regular Cleaning</h3>
-            <p>
-                Weekly, bi-weekly, or monthly cleaning services
-                to keep your home fresh and spotless.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>One-Time Cleaning</h3>
-            <p>
-                Perfect before guests arrive, after events,
-                or anytime you need a fresh start.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Move-In / Move-Out Cleaning</h3>
-            <p>
-                Professional cleaning for renters,
-                homeowners, and property managers.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Office Cleaning</h3>
-            <p>
-                Keep your workplace clean,
-                organized, and professional.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section class="container">
-    <h2>About Us</h2>
-
-    <p>
-        At Sister Maid NJ, we provide dependable and affordable
-        cleaning services for homes and small businesses throughout New Jersey.
-    </p>
-
-    <p>
-        Whether you need regular cleaning or a one-time cleaning,
-        we are committed to delivering quality service with attention to detail.
-    </p>
-</section>
-.logo{
-    width:100px;
-    display:block;
-    margin:0 auto 20px;
+/* SECTIONS */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
 }
 
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:20px;
+}
+
+/* BUSINESS CARD IMAGE */
 .businesscard{
     width:450px;
     max-width:100%;
     display:block;
     margin:30px auto;
     border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
+
+/* FOOTER */
+footer{
+    background:#f5f5f5;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<img src="Logo.png" alt="Sister Maid NJ Logo" class="logo">
+
+<h1>Sister Maid NJ</h1>
+
+<p>Professional Residential Cleaning Services</p>
+
+<p>Reliable • Affordable • Thorough</p>
+
+<p>📞 551-359-1685</p>
+<p>📧 sistermaidnj@gmail.com</p>
+
+<a class="button"
+href="https://docs.google.com/forms/d/e/1FAIpQLSdYJWfAc91uAfWKb7RXE6mZ4zpYBO3S-yIeXhZbJ62FEwkAPg/viewform"
+target="_blank">
+
+BOOK NOW
+
+</a>
+
+</header>
+
+<!-- SERVICES -->
 <section class="container">
 
-<h2>Our Business Card</h2>
+<h2>Our Services</h2>
 
-<img src="Front Bussines Card.jpg" alt="Business Card" class="businesscard">
-     alt="Business Card"
-     class="businesscard">
+<div class="services">
+
+<div class="card">
+<h3>Regular Cleaning</h3>
+<p>Weekly, bi-weekly, or monthly cleaning services.</p>
+</div>
+
+<div class="card">
+<h3>One-Time Cleaning</h3>
+<p>Perfect for special occasions or deep refresh cleaning.</p>
+</div>
+
+<div class="card">
+<h3>Move In / Move Out</h3>
+<p>Detailed cleaning for homes, rentals, and apartments.</p>
+</div>
+
+<div class="card">
+<h3>Office Cleaning</h3>
+<p>Professional cleaning for small businesses and offices.</p>
+</div>
+
+</div>
 
 </section>
 
-<footer>
-    <p>
-        Sister Maid NJ |
-        551-359-1685 |
-        sistermaidnj@outlook.com
-    </p>
+<!-- BUSINESS CARD -->
+<section class="container">
 
-    <p>
-        © 2026 Sister Maid NJ. All Rights Reserved.
-    </p>
+<h2>Business Card</h2>
+
+<img src="Front Bussines Card.jpg" alt="Business Card" class="businesscard">
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>Sister Maid NJ © 2026</p>
 </footer>
 
 </body>
