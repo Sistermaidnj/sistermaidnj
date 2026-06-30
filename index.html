@@ -15,119 +15,63 @@
 }
 
 body{
-    background:#f6f8fb;
+    background:#f6f7fb;
     color:#222;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO (KEEP ORIGINAL IMAGE COLORS) ===== */
 .hero{
     background: url("logo2.jpg") center/cover no-repeat;
     min-height:420px;
     display:flex;
     align-items:center;
     justify-content:center;
-    position:relative;
+    padding:40px 20px;
 }
 
-/* DARK OVERLAY */
-.hero::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:rgba(0,0,0,0.55);
-}
-
-.hero-content{
-    position:relative;
-    width:95%;
-    max-width:1200px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    color:white;
-    gap:25px;
-}
-
-/* LEFT LOGO */
-.logo{
-    width:110px;
-    border-radius:12px;
-}
-
-/* CENTER TEXT */
-.hero-text{
-    flex:1;
-    min-width:250px;
+.hero-box{
+    background: rgba(255,255,255,0.85);
+    padding:30px;
+    border-radius:15px;
     text-align:center;
+    max-width:600px;
+    width:100%;
 }
 
-.hero-text h1{
-    font-size:40px;
+.hero-box h1{
+    color:#008080;
     margin-bottom:10px;
-    letter-spacing:1px;
 }
 
-.hero-text p{
+.hero-box p{
     margin:6px 0;
-    font-size:15px;
-    opacity:0.95;
 }
 
-.hero-text .btn{
+.btn{
     display:inline-block;
     margin-top:15px;
-    padding:12px 25px;
-    background:#00b3b3;
+    padding:12px 22px;
+    background:#00a8a8;
     color:white;
-    text-decoration:none;
     border-radius:8px;
+    text-decoration:none;
     font-weight:bold;
 }
 
-/* RIGHT PANEL */
-.contact-panel{
-    background:rgba(255,255,255,0.12);
-    backdrop-filter: blur(10px);
-    padding:15px;
-    border-radius:15px;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-}
-
-/* BUSINESS CARD */
-.businesscard{
-    width:140px;
-    border-radius:10px;
-}
-
-/* QR */
-.qr{
-    width:130px;
-    background:white;
-    padding:6px;
-    border-radius:10px;
-}
-
-/* ===== SERVICES ===== */
+/* ===== SECTION ===== */
 .section{
-    padding:60px 20px;
     max-width:1100px;
     margin:auto;
+    padding:50px 20px;
 }
 
 .section h2{
     text-align:center;
-    margin-bottom:30px;
+    margin-bottom:25px;
     color:#008080;
-    font-size:28px;
 }
 
+/* SERVICES GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -136,24 +80,54 @@ body{
 
 .card{
     background:white;
-    padding:25px;
+    padding:20px;
     border-radius:12px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.06);
-    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
 }
 
-.card:hover{
-    transform:translateY(-5px);
+/* BUSINESS CARD */
+.businesscard{
+    width:260px;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* CONTACT BOX */
+.contact{
+    text-align:center;
+    margin-top:20px;
+}
+
+.contact a{
+    color:#008080;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* QR */
+.qr{
+    width:140px;
+    display:block;
+    margin:20px auto;
+    background:white;
+    padding:5px;
+    border-radius:10px;
 }
 
 /* FOOTER */
 footer{
     text-align:center;
-    padding:25px;
+    padding:30px;
     background:#fff;
     margin-top:40px;
     border-top:1px solid #eee;
-    font-size:14px;
+}
+
+footer img{
+    width:90px;
+    margin-bottom:10px;
 }
 
 </style>
@@ -164,36 +138,32 @@ footer{
 <!-- ===== HERO ===== -->
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-box">
 
-    <!-- LEFT -->
-    <img src="Logo.png" class="logo" alt="Logo">
+    <h1>Sister Maid NJ</h1>
 
-    <!-- CENTER -->
-    <div class="hero-text">
-        <h1>Sister Maid NJ</h1>
+    <p>Professional Residential Cleaning Services</p>
+    <p>Reliable • Affordable • Thorough</p>
 
-        <p>Professional Residential Cleaning Services</p>
-        <p>Reliable • Affordable • Thorough</p>
+    <p>📞 551-359-1685</p>
 
-        <p>📞 551-359-1685</p>
-        <p>📧 sistermaidnj@outlook.com</p>
+    <!-- CLICKABLE EMAIL -->
+    <p>
+        📧 <a href="mailto:sistermaidnj@outlook.com">sistermaidnj@outlook.com</a>
+    </p>
 
-        <a class="btn" href="https://bit.ly/4eDUcJe" target="_blank">
-        BOOK NOW
-        </a>
-    </div>
+    <!-- WHATSAPP BUTTON -->
+    <a class="btn"
+       href="https://wa.me/15513591685"
+       target="_blank">
+       Message on WhatsApp
+    </a>
 
-    <!-- RIGHT -->
-    <div class="contact-panel">
-
-        <img src="Front Bussines Card.jpg" class="businesscard" alt="Business Card">
-
-        <img class="qr"
-        src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ACastillo%3BRamona%0AFN%3ARamona%20Castillo%0AORG%3ASister%20Maid%20NJ%0ATEL%3A5513591685%0AEMAIL%3Asistermaidnj%40outlook.com%0AURL%3Ahttps%3A%2F%2Ftinyurl.com%2FSisterMaidNJ%0AURL%3Ahttps%3A%2F%2Fbit.ly%2F4eDUcJe%0ASOCIALPROFILE%3Ahttps%3A%2F%2Finstagram.com%2FSisterMaidNJ%0AEND%3AVCARD"
-        alt="QR Code">
-
-    </div>
+    <!-- BOOKING -->
+    <br>
+    <a class="btn" href="https://bit.ly/4eDUcJe" target="_blank">
+        Book Cleaning
+    </a>
 
 </div>
 
@@ -208,30 +178,45 @@ footer{
 
 <div class="card">
 <h3>Regular Cleaning</h3>
-<p>Weekly, bi-weekly, or monthly home cleaning.</p>
+<p>Weekly, bi-weekly, monthly cleaning.</p>
 </div>
 
 <div class="card">
 <h3>Deep Cleaning</h3>
-<p>Detailed top-to-bottom cleaning for a fresh start.</p>
+<p>Full detailed cleaning for homes.</p>
 </div>
 
 <div class="card">
-<h3>Move In/Out</h3>
-<p>Perfect for renters, landlords, and homeowners.</p>
+<h3>Move In / Out</h3>
+<p>Perfect for renters and landlords.</p>
 </div>
 
 <div class="card">
 <h3>Office Cleaning</h3>
-<p>Reliable cleaning for small businesses.</p>
+<p>Professional commercial cleaning.</p>
 </div>
 
 </div>
+
+<!-- BUSINESS CARD MOVED TO BODY -->
+<img src="Front Bussines Card.jpg" class="businesscard" alt="Business Card">
+
+<!-- QR CODE -->
+<img class="qr"
+src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ACastillo%3BRamona%0AFN%3ARamona%20Castillo%0AORG%3ASister%20Maid%20NJ%0ATEL%3A5513591685%0AEMAIL%3Asistermaidnj%40outlook.com%0AURL%3Ahttps%3A%2F%2Ftinyurl.com%2FSisterMaidNJ%0AURL%3Ahttps%3A%2F%2Fbit.ly%2F4eDUcJe%0ASOCIALPROFILE%3Ahttps%3A%2F%2Finstagram.com%2FSisterMaidNJ%0AEND%3AVCARD"
+alt="QR Code">
 
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-Sister Maid NJ © 2026
+
+<img src="Logo.png" alt="Logo">
+
+<p>📧 <a href="mailto:sistermaidnj@outlook.com">sistermaidnj@outlook.com</a></p>
+
+<p>Sister Maid NJ © 2026</p>
+
 </footer>
 
 </body>
